@@ -27,8 +27,9 @@ var newStr = jsh.compile(string);
 'use strict';
 let fs = require('fs');
 let jsh = require("haxcv-jsh");
-
-let data = fs.readFileSync('templates.jsh');
+jsh.title = "Welcome to haxcv";
+jsh.keywords = ["Manassa","Js","haxcv","framewrok","jsH"];
+let data = fs.readFileSync('template.jsh');
 let newData = jsh.compile(data);
 
 console.log(newData);
@@ -41,16 +42,16 @@ console.log(newData);
 <!DOCTYPE html>
 <html>
 <head>
-	<title>{{+this.title+}}</title>
+    <title>{{+this.title+}}</title>
 </head>
 <body>
  }}
 
 
-this.list.forEach(e){
-	{{
-		<h2>{{+e+}}</h2>
-	}}
+this.keywords.forEach(e){
+  {{
+    <h2>keywords :  {{+e+}}</h2>
+  }}
  }
 
 ?>      
