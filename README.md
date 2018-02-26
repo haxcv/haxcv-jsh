@@ -30,7 +30,7 @@ let jsh = require("haxcv-jsh");
 jsh.title = "Welcome to haxcv";
 jsh.keywords = ["Manassa","Js","haxcv","framewrok","jsH"];
 let data = fs.readFileSync('template.jsh');
-let newData = jsh.compile(data);
+let newData = jsh.compile(data.toString());
 
 console.log(newData);
 
