@@ -44,27 +44,16 @@ console.log(newData);
     <title>{@this.title@}</title>
 </head>
 <body>
-```
 
-```javascript
 <?
 
  this.keywords.forEach((e) =>{
- ``` 
-```html
    {{
      <h2>keywords :  {{+e+}}</h2>
    }}
- ```
- 
-```javascript
  });
 
- ?>
- ```
- ```html
+ ?>  
 </body>
-</html>
-      
-
+</html>    
 ```
