@@ -1,0 +1,19 @@
+{
+  "name": "haxcv-jsh",
+  "version": "1.0.2",
+  "description": "haxcv-jsh is javascript Compiler with ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jsh"
+  },
+  "keywords": [
+    "haxcv-cgi",
+    "jsh"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haxcv/haxcv-jsh.git"
+  },
+  "author": "Manassa Joseph",
+  "license": "MIT"
+}
