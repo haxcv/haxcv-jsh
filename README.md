@@ -57,3 +57,60 @@ console.log(newData);
 </body>
 </html>    
 ```
+
+### require external jsH template 
+```html
+ <?
+   jsH.require("./files/header.html);   
+   jsH.require("./files/body.html);
+   jsH.require("./files/footer.html);  
+ ?>    
+```
+> header.html
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to website /title>
+</head>
+<body>
+    <header>
+        <nav>
+         <!-- header list here -->
+        </nav>
+    </header>
+```
+> body.html
+```html
+<?
+var menus = ["home","login","signup","about us"];
+    menus.forEach(e=>{
+     {{
+       <ul>
+         <li>
+            <a href="{{+e+}}">e</a>
+         </li>
+       </ul>
+     }}
+?>
+```
+> footer.html 
+```html
+<footer>
+  <?
+var menus = ["Policy","Terms","Cookies","Career"];
+    menus.forEach(e=>{
+     {{
+       <ul>
+         <li>
+            <a href="{{+e+}}">e</a>
+         </li>
+       </ul>
+     }}
+?>
+</footer>
+</body>
+</html>
+```
+
+
