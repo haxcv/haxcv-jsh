@@ -71,7 +71,7 @@ console.log(newData);
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Welcome to website /title>
+    <title>Welcome to website </title>
 </head>
 <body>
     <header>
